@@ -20,7 +20,7 @@ const useClonedScene = (url) => {
 
 export  const AnimatedModel = (props) =>{
   const group = useRef();
-  const { nodes, materials, animations } = useClonedScene('/models/animatedmodel.glb');
+  const { nodes, materials, animations } = useClonedScene('/models/glass-transformed.glb');
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
@@ -50,4 +50,4 @@ export  const AnimatedModel = (props) =>{
   );
 };
 
-useGLTF.preload('/models/animatedmodel.glb')
+useGLTF.preload('/models/glass-transformed.glb')
