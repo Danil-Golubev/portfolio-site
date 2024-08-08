@@ -1,34 +1,41 @@
-import React, { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { ModelRender } from './components/modelRender';
+import React, { useEffect, useState } from 'react';
 import styles from './app.module.css';
+import { WidgetBar } from './components/WidgetBar/WidgetBar';
+import { CanvasBlock } from './components/CanvasBlock/CanvasBlock';
 
 const App = () => {
+	const [bgColor, setBgColor] = useState('rgba(0, 0, 0, 0)');
+
+	const handleScroll = () => {
+		const scrollTop = window.scrollY;
+		const maxScroll = 350; // Максимальная высота скролла для полного затемнения
+		const opacity = Math.min(scrollTop / maxScroll, 1); // Ограничиваем значение до 1
+
+		// Используем requestAnimationFrame для плавного обновления
+		requestAnimationFrame(() => {
+			setBgColor(`rgba(0, 0, 0, ${opacity})`);
+		});
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+
+	document.addEventListener('aos:in', ({ detail }) => {
+		console.log('animated in', detail);
+	});
+
 	return (
 		<>
-			<div id='block' className={styles.block}>
-				<Canvas
-					camera={{ position: [0, 0, -1.4] }}
-					style={{
-						backgroundColor: 'black',
-						width: '100%',
-						height: '100%',
-						justifyContent: 'center',
-					}}
-				>
-					<Suspense>
-						<ambientLight intensity={1} />
-						<ambientLight intensity={0.25} />
-						<directionalLight intensity={0.2} />
-						<pointLight position={[10, 10, 10]} />
-						<ModelRender url='/3dmodel-test/models/finalmodel.glb' />
-						{/*<AnimatedModel />*/}
-					</Suspense>
-				</Canvas>
+			<div className={styles.container}>
+				<CanvasBlock />
+				<div className={styles.overlayElement} style={{ background: bgColor }}></div>
 			</div>
-			<div className={styles.block2}>
-				<div className={styles.card}></div>
-			</div>
+			<WidgetBar />
+			<div className={styles.block2}></div>
 		</>
 	);
 };
