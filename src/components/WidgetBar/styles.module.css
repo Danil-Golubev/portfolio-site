@@ -18,13 +18,10 @@
 	overflow: hidden;
 	display: flex;
 	position: relative;
-	width: 90%;
-	height: 90%;
-	position: sticky;
 	background-color: black; /* Цвет фона */
 	border-radius: 40px;
 	width: 19.8vw; /* Ширина виджета */
-	height: 398px;
+	height: 397px;
 }
 
 .fontWidget {
@@ -38,4 +35,9 @@
 	font-family: 'Courier New', Courier, monospace;
 	gap: 10px;
 	display: grid;
+}
+.svg {
+	background-color: white;
+	height: 30px;
+	width: 30px;
 }
