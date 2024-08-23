@@ -24,17 +24,15 @@ const App = () => {
 		};
 	}, []);
 
-	document.addEventListener('aos:in', ({ detail }) => {
-		console.log('animated in', detail);
-	});
-
 	return (
 		<>
-			<div className={styles.container}>
-				<CanvasBlock />
-				<div className={styles.overlayElement} style={{ background: bgColor }}></div>
+			<div className={styles.main}>
+				<div className={styles.container}>
+					<CanvasBlock />
+					<div className={styles.overlayElement} style={{ background: bgColor }}></div>
+				</div>
+				<WidgetBar />
 			</div>
-			<WidgetBar />
 			<div className={styles.block2}></div>
 		</>
 	);

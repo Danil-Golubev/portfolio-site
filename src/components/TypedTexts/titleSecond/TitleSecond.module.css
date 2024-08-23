@@ -1,0 +1,42 @@
+.textBlock {
+	height: 1vw;
+	display: flex;
+}
+
+.p1 {
+	border-right: solid 3px rgba(0, 255, 0, 0.75);
+	white-space: nowrap;
+	overflow: hidden;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 1vw;
+	color: rgb(255, 255, 255);
+	margin: 0 auto;
+}
+
+.p1 {
+	animation: animated-text 1.4s steps(29, end) 1s 1 normal both, animated-cursor 1.5s steps(29, end) 1.5s 1 normal both;
+}
+
+@keyframes animated-text {
+	from {
+		width: 0;
+	}
+	to {
+		width: 32vw;
+	}
+}
+
+@keyframes animated-cursor {
+	from {
+		border-right-color: rgba(0, 255, 0, 0.75);
+	}
+	to {
+		border-right: none;
+	}
+}
+
+@media (max-weight: 1200px) {
+	.p1 {
+		font-size: 2vw;
+	}
+}

@@ -7,7 +7,7 @@ export const CanvasBlock = () => {
 		<>
 			<div id='block' className={styles.block}>
 				<Canvas
-					camera={{ position: [0, 0, -1.4] }}
+					camera={{ position: [0, -1, -1.4] }}
 					style={{
 						backgroundColor: 'black',
 						width: '100%',
