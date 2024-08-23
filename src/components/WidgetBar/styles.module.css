@@ -1,43 +1,26 @@
-.widgetBar {
-	position: fixed;
-	top: 30%; /* Отступ сверху */
-	right: 40px; /* Отступ от правого края */
-	width: 20vw; /* Ширина виджета */
-	height: 400px;
-	background-color: #f0f0f0; /* Цвет фона */
-	border-radius: 40px;
-	background: url(https://grainy-gradients.vercel.app/noise.svg),
-		linear-gradient(90deg, rgba(56, 255, 16, 1) 0%, rgba(255, 113, 179, 1) 84%);
+.mainBlock {
+	position: absolute;
+	background-color: rgb(9, 9, 9);
+	opacity: 0.6;
+	width: 50vw;
+	height: 40vw;
+	font-size: 5vw;
+	border-radius: 20px;
+	border: 1px solid grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 20%;
+}
+.contentBlock {
+	width: 80%;
+	height: 80%;
 	justify-content: center;
 	align-items: center;
 	display: flex;
-	z-index: 12;
 }
 
-.widgetContent {
-	overflow: hidden;
-	display: flex;
-	position: relative;
-	background-color: black; /* Цвет фона */
-	border-radius: 40px;
-	width: 19.8vw; /* Ширина виджета */
-	height: 397px;
-}
-
-.fontWidget {
-	color: rgb(255, 255, 255);
-}
-
-.titlesBlock {
-	justify-content: center;
-	align-items: center;
-	padding: 10px;
-	font-family: 'Courier New', Courier, monospace;
-	gap: 10px;
-	display: grid;
-}
-.svg {
-	background-color: white;
-	height: 30px;
-	width: 30px;
+.title {
+	color: white;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

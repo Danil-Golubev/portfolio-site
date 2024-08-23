@@ -33,8 +33,10 @@ const App = () => {
 			<div className={styles.container}>
 				<CanvasBlock />
 				<div className={styles.overlayElement} style={{ background: bgColor }}></div>
+				<div className={styles.widgetBlock}>
+					<WidgetBar />
+				</div>
 			</div>
-			<WidgetBar />
 			<div className={styles.block2}></div>
 		</>
 	);
