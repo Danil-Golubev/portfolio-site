@@ -2,15 +2,15 @@
 	position: absolute;
 	background-color: rgb(9, 9, 9);
 	opacity: 0.6;
-	width: 50vw;
-	height: 40vw;
+	width: 30vw;
+	height: 15vw;
 	font-size: 5vw;
 	border-radius: 20px;
 	border: 1px solid grey;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	bottom: 20%;
+	bottom: 40%;
 }
 .contentBlock {
 	width: 80%;
@@ -23,4 +23,11 @@
 .title {
 	color: white;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media (max-width: 1200px) {
+	.mainBlock {
+		width: 70vw;
+		height: 40vw;
+	}
 }
