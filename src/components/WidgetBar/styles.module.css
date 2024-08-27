@@ -21,13 +21,16 @@
 }
 
 .title {
+	font-size: 0.2em;
 	color: white;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 @media (max-width: 1200px) {
 	.mainBlock {
 		width: 70vw;
 		height: 40vw;
+	}
+	.title {
+		font-size: 0.5em;
 	}
 }
