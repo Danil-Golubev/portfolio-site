@@ -37,7 +37,9 @@ const App = () => {
 					<WidgetBar />
 				</div>
 			</div>
-			<div className={styles.block2}></div>
+			<div className={styles.block2}>
+				<div>page in progress, please comeback later</div>
+			</div>
 		</>
 	);
 };

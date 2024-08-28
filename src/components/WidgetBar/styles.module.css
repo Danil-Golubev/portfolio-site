@@ -2,15 +2,15 @@
 	position: absolute;
 	background-color: rgb(9, 9, 9);
 	opacity: 0.6;
-	width: 30vw;
-	height: 15vw;
+	max-width: 80%;
+	height: fit-content;
 	font-size: 5vw;
 	border-radius: 20px;
 	border: 1px solid grey;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	bottom: 40%;
+	bottom: 30%;
 }
 .contentBlock {
 	width: 80%;
@@ -21,16 +21,25 @@
 }
 
 .title {
+	padding: 30px;
 	font-size: 0.2em;
 	color: white;
 }
 
 @media (max-width: 1200px) {
 	.mainBlock {
-		width: 70vw;
-		height: 40vw;
+		bottom: 10%;
 	}
 	.title {
-		font-size: 0.5em;
+		font-size: 0.3em;
+	}
+}
+
+@media (max-width: 900px) {
+	.mainBlock {
+		bottom: 12%;
+	}
+	.title {
+		font-size: 0.4em;
 	}
 }
