@@ -1,6 +1,6 @@
 {
-	"homepage": "https://danil-golubev.github.io/3dmodel-test/",
-	"name": "portfolio-sitel",
+	"homepage": "https://danil-golubev.github.io/portfolio-site/",
+	"name": "portfolio-site",
 	"version": "0.1.1",
 	"private": true,
 	"dependencies": {

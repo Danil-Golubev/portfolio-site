@@ -20,7 +20,7 @@ export const CanvasBlock = () => {
 						<ambientLight intensity={0.25} />
 						<directionalLight intensity={0.2} />
 						<pointLight position={[10, 10, 10]} />
-						<ModelRender url='/3dmodel-test/models/finalmodel.glb' />
+						<ModelRender url='/portfolio-site/models/finalmodel.glb' />
 						{/*<AnimatedModel />*/}
 					</Suspense>
 				</Canvas>
