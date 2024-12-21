@@ -40,9 +40,12 @@ const App = () => {
 			</div>
 			<div className={styles.block3}>
 				<div className={styles.photoBlock}>
-					<img src='/portfolio-site/images/1.png' alt='1' />
+					<img className={styles.image} src='/portfolio-site/images/1.png' alt='1' />
 				</div>
-				<div className={styles.textInfoBlock}></div>
+				<div className={styles.textInfoBlock}>
+					A full copied website of jewerly brand Homer founded by Frank Ocean in 2021 Was rebuiled on react instead of
+					shopify
+				</div>
 			</div>
 			<div className={styles.block2}>
 				<div>page in progress, please comeback later</div>

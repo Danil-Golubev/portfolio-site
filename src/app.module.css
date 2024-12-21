@@ -44,12 +44,24 @@ body {
 	width: 100%;
 	justify-content: center;
 	display: flex;
-	color: white;
+}
+
+.image {
+	height: 100%;
 }
 
 .photoBlock {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 50%;
 }
 .textInfoBlock {
+	font-size: 20px;
+	font-weight: 600;
+	color: gray;
+	height: 100%;
+	width: 50%;
 }
 
 .card {
