@@ -78,7 +78,6 @@ body {
 	height: 100vh;
 	align-items: center;
 	justify-content: center;
-	background-color: rgb(0, 0, 0);
 }
 .overlayElement {
 	position: absolute;
@@ -99,4 +98,10 @@ body {
 	width: 100%;
 	justify-content: center;
 	align-items: center;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
 }

@@ -38,17 +38,28 @@ const App = () => {
 					<WidgetBar />
 				</div>
 			</div>
-			<div className={styles.block3}>
-				<div className={styles.photoBlock}>
-					<img className={styles.image} src='/portfolio-site/images/1.png' alt='1' />
+			<div className={styles.content}>
+				<div className={styles.block3}>
+					<div className={styles.photoBlock}>
+						<img className={styles.image} src='/portfolio-site/images/1.png' alt='1' />
+					</div>
+					<div className={styles.textInfoBlock}>
+						A full copied website of jewerly brand Homer founded by Frank Ocean in 2021 Was rebuiled on react instead of
+						shopify
+					</div>
 				</div>
-				<div className={styles.textInfoBlock}>
-					A full copied website of jewerly brand Homer founded by Frank Ocean in 2021 Was rebuiled on react instead of
-					shopify
+				<div className={styles.block3}>
+					<div className={styles.photoBlock}>
+						<img className={styles.image} src='/portfolio-site/images/3.png' alt='1' />
+					</div>
+					<div className={styles.textInfoBlock}>
+						A full copied website of jewerly brand Homer founded by Frank Ocean in 2021 Was rebuiled on react instead of
+						shopify
+					</div>
 				</div>
-			</div>
-			<div className={styles.block2}>
-				<div>page in progress, please comeback later</div>
+				<div className={styles.block2}>
+					<div>page in progress, please comeback later</div>
+				</div>
 			</div>
 		</>
 	);
