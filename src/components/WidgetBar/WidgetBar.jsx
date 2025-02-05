@@ -25,11 +25,12 @@ export const WidgetBar = () => {
 						применял знания в day-to-day работе. Использовал в работе React, Redux, React Hook Form, Модульный CSS,
 						Styled Components. */}
 						{/* hi im Danil */}
-						<div>Hi,my name is Danil</div>
-
-						<div>My Links:</div>
-						<div>-resume</div>
-						<div>-linkedin</div>
+						<div>
+							<div>hey, Im Danil</div>
+							<div>resume</div>
+							<div>linkedin</div>
+							<div>about me</div>
+						</div>
 					</div>
 				</div>
 			</div>

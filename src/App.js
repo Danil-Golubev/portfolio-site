@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './app.module.css';
 import { WidgetBar } from './components/WidgetBar/WidgetBar';
 import { CanvasBlock } from './components/CanvasBlock/CanvasBlock';
-
+import { motion } from 'framer-motion';
 const App = () => {
 	const [bgColor, setBgColor] = useState('rgba(0, 0, 0, 0)');
 
@@ -30,37 +30,39 @@ const App = () => {
 
 	return (
 		<>
-			<div className={styles.container}>
-				<CanvasBlock />
-				<div className={styles.overlayElement} style={{ background: bgColor }}></div>
-				<div className={styles.widgetBlock}>
-					{' '}
-					<WidgetBar />
-				</div>
-			</div>
-			<div className={styles.content}>
-				<div className={styles.block3}>
-					<div className={styles.photoBlock}>
-						<img className={styles.image} src='/portfolio-site/images/1.png' alt='1' />
-					</div>
-					<div className={styles.textInfoBlock}>
-						A full copied website of jewerly brand Homer founded by Frank Ocean in 2021 Was rebuiled on react instead of
-						shopify
+			<motion.div initial={{ opacity: 0, y: 0 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 2 }}>
+				<div className={styles.container}>
+					<CanvasBlock />
+					<div className={styles.overlayElement} style={{ background: bgColor }}></div>
+					<div className={styles.widgetBlock}>
+						{' '}
+						<WidgetBar />
 					</div>
 				</div>
-				<div className={styles.block3}>
-					<div className={styles.photoBlock}>
-						<img className={styles.image} src='/portfolio-site/images/3.png' alt='1' />
+				<div className={styles.content}>
+					<div className={styles.block3}>
+						<div className={styles.photoBlock}>
+							<img className={styles.image} src='/portfolio-site/images/1.png' alt='1' />
+						</div>
+						<div className={styles.textInfoBlock}>
+							A full copied website of jewerly brand Homer founded by Frank Ocean in 2021 Was rebuiled on react instead
+							of shopify
+						</div>
 					</div>
-					<div className={styles.textInfoBlock}>
-						A full copied website of jewerly brand Homer founded by Frank Ocean in 2021 Was rebuiled on react instead of
-						shopify
+					<div className={styles.block3}>
+						<div className={styles.photoBlock}>
+							<img className={styles.image} src='/portfolio-site/images/3.png' alt='1' />
+						</div>
+						<div className={styles.textInfoBlock}>
+							A full copied website of jewerly brand Homer founded by Frank Ocean in 2021 Was rebuiled on react instead
+							of shopify
+						</div>
+					</div>
+					<div className={styles.block2}>
+						<div>page in progress, please comeback later</div>
 					</div>
 				</div>
-				<div className={styles.block2}>
-					<div>page in progress, please comeback later</div>
-				</div>
-			</div>
+			</motion.div>
 		</>
 	);
 };

@@ -2,9 +2,10 @@
 	position: absolute;
 	background-color: rgb(9, 9, 9);
 	opacity: 0.6;
+	min-width: 20%;
 	max-width: 80%;
 	height: auto;
-	font-size: 5vw;
+	font-size: 8vw;
 	border-radius: 20px;
 	border: 1px solid grey;
 	display: flex;
@@ -20,6 +21,8 @@
 }
 
 .title {
+	text-align: center;
+
 	padding: 10px;
 	font-size: 0.2em;
 	color: white;
